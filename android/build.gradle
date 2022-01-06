@@ -18,9 +18,6 @@ rootProject.allprojects {
         mavenCentral()
         google()
         jcenter()
-        flatDir {
-            dirs project(':jpush_flutter').file('libs')
-        }
     }
 }
 
@@ -36,14 +33,7 @@ android {
         disable 'InvalidPackage'
     }
 }
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
 dependencies {
     implementation 'cn.jiguang.sdk:jpush:4.0.9'
-    implementation(name: 'jcore-android-3.1.2-google_play', ext: 'jar')
-
-//    implementation 'cn.jiguang.sdk:jcore:2.8.2'
+    implementation 'cn.jiguang.sdk:jcore:2.8.2'
 }
