@@ -42,8 +42,8 @@ repositories {
     }
 }
 dependencies {
-    implementation 'cn.jiguang.sdk:jpush:4.0.9'
-    implementation(name: 'jcore-android-3.1.2-google_play', ext: 'jar')
-
+//    implementation 'cn.jiguang.sdk:jpush:4.0.9'
 //    implementation 'cn.jiguang.sdk:jcore:2.8.2'
+    implementation(name: 'jcore-android-3.1.2-google_play', ext: 'jar')
+    implementation(name: 'jpush-android-4.5.0-google_play', ext: 'jar')
 }
